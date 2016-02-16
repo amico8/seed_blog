@@ -1,4 +1,5 @@
 <?php
+	require('models/blog.php');
 
 	// コントローラのクラスをインスタンス化
 	$controller = new BlogsController();
@@ -17,7 +18,9 @@
 
 	class BlogsController {
 		public function index() {
-			echo 'コントローラのindex()が呼ばれました！';
+			// モデルを呼び出す
+			$blog = new Blog();
+			$blog->index();
 		}
 	}
 ?>
