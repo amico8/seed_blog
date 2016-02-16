@@ -20,11 +20,18 @@
 		// プロパティ
 		private $action = '';
 		private $resource = '';
+		private $viewOptions = '';
 
 		public function index() {
 			// モデルを呼び出す
 			$blog = new Blog();
-			$blog->index();
+			$this->viewOptions = $blog->index();
+
+			// foreach ($this->viewOptions as $viewOption) {
+			// 	echo $viewOption['id'];
+			// 	echo $viewOption['title'];
+			// 	echo $viewOption['created'];
+			// }
 
 			// アクション名を設定する
 			$this->action = 'index';

@@ -15,11 +15,12 @@
 			$sql = 'SELECT * FROM `blogs` WHERE `delete_flag` = 0';
 			$results = mysqli_query($this->dbconnect, $sql) or die(mysqli_error($this->dbconnect));
 
+			$rtn = array();
 			while ($result = mysqli_fetch_assoc($results)) {
-				echo $result['id'].'<br>';
-				echo $result['title'].'<br>';
-				echo $result['created'].'<br>';
+				$rtn[] = $result;
 			}
+			// 取得結果を返す
+			return $rtn;
 		}
 	}
 ?>
