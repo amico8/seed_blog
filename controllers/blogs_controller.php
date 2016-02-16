@@ -17,10 +17,20 @@
 	}
 
 	class BlogsController {
+		// プロパティ
+		private $action = '';
+		private $resource = '';
+
 		public function index() {
 			// モデルを呼び出す
 			$blog = new Blog();
 			$blog->index();
+
+			// アクション名を設定する
+			$this->action = 'index';
+
+			// ビューを呼び出す
+			require('views/layout/application.php');
 		}
 	}
 ?>
