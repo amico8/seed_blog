@@ -8,11 +8,11 @@
     <title>Seed Blog</title>
 
     <!-- Bootstrap -->
-    <link href="../webroot/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="../webroot/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="../webroot/assets/css/form.css" rel="stylesheet">
-    <link href="../webroot/assets/css/timeline.css" rel="stylesheet">
-    <link href="../webroot/assets/css/main.css" rel="stylesheet">
+    <link href="/seed_blog/webroot/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/seed_blog/webroot/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/seed_blog/webroot/assets/css/form.css" rel="stylesheet">
+    <link href="/seed_blog/webroot/assets/css/timeline.css" rel="stylesheet">
+    <link href="/seed_blog/webroot/assets/css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
