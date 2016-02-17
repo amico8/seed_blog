@@ -12,7 +12,7 @@
 			break;
 
 		case 'show':
-			$controller->show();
+			$controller->show($id);
 			break;
 
 		default:
@@ -44,9 +44,15 @@
 			include('views/layout/application.php');
 		}
 
-		public function show(){
+		public function show($id){
 			$blog = new Blog();
-			$blog->show();
+			$blog->show($id);
+
+			// アクション名を設定する
+			$this->action = 'show';
+
+			// ビューを呼び出す
+			include('views/layout/application.php');
 		}
 	}
 ?>

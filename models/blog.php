@@ -23,8 +23,10 @@
 			return $rtn;
 		}
 
-		public function show(){
-			echo 'モデルのshowメソッドが呼び出されました';
+		public function show($id){
+			$sql = 'SELECT * FROM `blogs` WHERE `id` =' . $id;
+			$results = mysqli_query($this->dbconnect, $sql) or die(mysqli_error($this->dbconnect));
+			$result = mysqli_fetch_assoc($results);
 		}
 	}
 ?>
