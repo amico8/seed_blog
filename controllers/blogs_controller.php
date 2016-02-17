@@ -11,6 +11,10 @@
 			$controller->index();
 			break;
 
+		case 'show':
+			$controller->show();
+			break;
+
 		default:
 			# code...
 			break;
@@ -38,6 +42,11 @@
 
 			// ビューを呼び出す
 			include('views/layout/application.php');
+		}
+
+		public function show(){
+			$blog = new Blog();
+			$blog->show();
 		}
 	}
 ?>

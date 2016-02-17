@@ -22,5 +22,9 @@
 			// 取得結果を返す
 			return $rtn;
 		}
+
+		public function show(){
+			echo 'モデルのshowメソッドが呼び出されました';
+		}
 	}
 ?>
