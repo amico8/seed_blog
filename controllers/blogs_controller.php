@@ -71,6 +71,9 @@
 		public function create($post){
 			$blog = new Blog();
 			$blog->create($post);
+
+			// indexへ遷移
+			header('Location: /seed_blog/blogs/index/');
 		}
 	}
 ?>
