@@ -46,7 +46,7 @@
 
 		public function show($id){
 			$blog = new Blog();
-			$blog->show($id);
+			$this->viewOptions = $blog->show($id);
 
 			// アクション名を設定する
 			$this->action = 'show';
