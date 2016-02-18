@@ -19,6 +19,10 @@
 			$controller->add();
 			break;
 
+		case 'create':
+			$controller->create($post);
+			break;
+
 		default:
 			# code...
 			break;
@@ -62,6 +66,11 @@
 		public function add(){
 			$this->action = 'add';
 			include('views/layout/application.php');
+		}
+
+		public function create($post){
+			$blog = new Blog();
+			$blog->create($post);
 		}
 	}
 ?>

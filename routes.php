@@ -17,7 +17,6 @@
 	// フォームのデータ（$_POST）を受け取る
 	if (isset($_POST) && !empty($_POST)) {
 		$post = $_POST;
-		var_dump($post);
 	}
 
 	// ③コントローラの呼び出し
