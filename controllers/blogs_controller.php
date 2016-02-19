@@ -82,7 +82,7 @@
 
 		public function edit($id){
 			$blog = new Blog();
-			$blog->edit($id);
+			$this->viewOptions = $blog->edit($id);
 
 			// アクション名を指定する
 			$this->action = 'edit';

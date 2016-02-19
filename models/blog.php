@@ -41,6 +41,11 @@
 		}
 
 		public function edit($id){
+			$sql = 'SELECT * FROM `blogs` WHERE `id` =' . $id;
+			$results = mysqli_query($this->dbconnect, $sql) or die(mysqli_error($this->dbconnect));
+			$result = mysqli_fetch_assoc($results);
+			// 取得結果を返す
+			return $result;
 		}
 	}
 ?>
