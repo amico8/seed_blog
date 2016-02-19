@@ -39,5 +39,8 @@
 
 			mysqli_query($this->dbconnect, $sql) or die(mysqli_error($this->dbconnect));
 		}
+
+		public function edit($id){
+		}
 	}
 ?>
