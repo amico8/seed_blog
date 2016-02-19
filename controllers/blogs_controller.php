@@ -27,6 +27,10 @@
 			$controller->edit($id);
 			break;
 
+		case 'update':
+			$controller->update($id, $post);
+			break;
+
 		default:
 			# code...
 			break;
@@ -89,6 +93,14 @@
 
 			// ビューを呼び出す
 			include('views/layout/application.php');
+		}
+
+		public function update($id, $post){
+			$blog = new Blog();
+			$blog->update($id, $post);
+
+			// indexへ遷移
+			header('Location: /seed_blog/blogs/index/');
 		}
 	}
 ?>
